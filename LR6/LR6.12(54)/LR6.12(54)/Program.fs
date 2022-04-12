@@ -18,7 +18,9 @@ let prov list element =
         match list with
         | [] -> count
         | h::t -> 
-            let new_count = if h = elem then count + 1 else count
+            let new_count = 
+                if h = elem then count + 1 
+                else count
             prov1 t elem new_count
     prov1 list element 0
 
@@ -27,7 +29,9 @@ let search list pred =
         match list with
         | [] -> new_list
         | h::t ->
-            let New_list = if pred h then new_list @ [h] else new_list
+            let New_list = 
+                if pred h then new_list @ [h] 
+                else new_list
             search1 t pred New_list    
     search1 list pred []
 

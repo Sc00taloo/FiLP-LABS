@@ -18,7 +18,9 @@ let min_elem list =
         match list with
         | [] -> current_min
         | h::t ->
-            let new_current_min = if h < current_min then h else current_min
+            let new_current_min = 
+                if h < current_min then h 
+                else current_min
             mir t new_current_min    
     mir list list.Head
 
@@ -27,7 +29,9 @@ let max_elem list =
         match list with
         | [] -> current_max
         | h::t ->
-            let new_current_max = if h > current_max then h else current_max
+            let new_current_max = 
+                if h > current_max then h 
+                else current_max
             mir t new_current_max    
     mir list list.Head
 
@@ -44,7 +48,9 @@ let miss list =
     let rec miss list new_list current =
         if current = MaxElem then new_list
         else
-            let new_list = if contains list current then new_list else new_list @ [current]
+            let new_list = 
+                if contains list current then new_list 
+                else new_list @ [current]
             let new_current = current + 1
             miss list new_list new_current           
     miss list [] MinElem

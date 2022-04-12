@@ -29,9 +29,10 @@ let menishe_sred list pred =
         match list with
         | [] -> new_list
         | h::t ->
-            let new_new_list = if pred h then new_list @ [h] else new_list
-            countPred_r t pred new_new_list
-    
+            let new_new_list = 
+                if pred h then new_list @ [h] 
+                else new_list
+            countPred_r t pred new_new_list    
     countPred_r list pred []
         
 
