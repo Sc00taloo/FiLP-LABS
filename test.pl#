@@ -1,0 +1,23 @@
+man(Mihail)
+man(Petrov)
+man(Fyodor)
+man(Maksim)
+man(Kolya)
+man(Gleb)
+man(Efrimof)
+man(Joni)
+man(Ivan)
+
+woman(Anya)
+woman(Galya)
+woman(Polina)
+woman(Milana)
+woman(Kristina)
+woman(Alina)
+woman(Nina)
+woman(Jinjer)
+woman(Rosa)
+woman(Rina)
+
+parent(Mihail, Anya)
+paren
