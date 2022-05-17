@@ -15,6 +15,6 @@ let main argv =
 
     printfn "Какой язык проиграммирования у тебя любимый?"
     printfn "Prolog - 1, F# - 2, C++ - 3, C# - 4, Pascal - 5, Python - 6"
-    let user input (output:string->unit) chooser = output (chooser (input ()))
-    user Console.ReadLine Console.WriteLine test
+    let karr (x:string->unit) y = x(y())
+    karr test Console.ReadLine
     0
