@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "aN7eMTVKgDQfPci4TzmE6rWKsR4pM3JR/HKhSpY+/IRT8E9o6iooVg0JkpotSS2vErdlY7NEDg1WPJzY7zVJLg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\User\\Documents\\GitHub\\FiLP-LABS\\LR7\\LR7.11(46)\\LR7.11(46)\\LR7.11(46).fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\fsharp.core\\5.0.0\\fsharp.core.5.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
+  "logs": []
+}
