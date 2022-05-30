@@ -1,0 +1,2 @@
+length14([],0):-!.
+length14([_|T], CNTS) :- length(T,I), CNTS is I + 1.
