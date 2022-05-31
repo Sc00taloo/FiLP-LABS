@@ -1,0 +1,10 @@
+join([], X, X).
+join([H|T], Z, [H|W]) :- join(T, Z, W).
+
+list_avg(List, Result) :- list_avg(List, 0, 0, Result).
+list_avg([], CurSum, CurCnt, Result) :- Result is CurSum / CurCnt.
+list_avg([H|T], CurSum, CurCnt, Result) :- NewSum is CurSum + H, NewCnt is CurCnt + 1, list_avg(T, NewSum, NewCnt, Result), !.
+
+filter_less_than(List, X, Result) :- filter_less_than(List, X, [], Result).
+filter_less_than([], _, Result, Result) :- !.
+filter_less_than([H|T], X, CurList, Result) :- (H < X,  join(CurList, [H], NewList); NewList = CurList), filter_less_than(T, X, NewList, Result), !.
