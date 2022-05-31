@@ -1,3 +1,3 @@
-getMinList([Head | Tail], Min) :- getMinList([Head | Tail], Head, Min).
+getMinList([H|T], Min) :- getMinList([H|T], H, Min).
 getMinList([], Min, Min) :- !.
-getMinList([Head | Tail], CurMin, Min) :- (Head < CurMin, NewMin is Head; NewMin is CurMin), getMinList(Tail, NewMin, Min), !.
+getMinList([H|T], CurMin, Min) :- (H< CurMin, NewMin is H; NewMin is CurMin), getMinList(T, NewMin, Min), !.
