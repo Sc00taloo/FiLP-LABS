@@ -1,0 +1,3 @@
+is_LocalMax([Head | Tail], Index) :- is_LocalMax([Head | Tail], 1, Index).
+is_LocalMax([Prev, Current, Next | _], Index, Index) :- Current > Prev, Current > Next.
+is_LocalMax([_ | Tail], I, Index) :- I1 is I + 1, is_LocalMax(Tail, I1, Index), !.
