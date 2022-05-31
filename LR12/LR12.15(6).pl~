@@ -1,0 +1,7 @@
+join([], X, X).
+join([X|Y], Z, [X|W]) :- join(Y, Z, W).
+
+shift_left(Result, 0, Result) :- !.
+shift_left([X|T], N, Result) :- N1 is N - 1, join(T, [X], NewList), shift_left(NewList, N1, Result), !.
+
+shift_left_3([X|T], Result) :- shift_left([X|T], 3, Result).
