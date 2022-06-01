@@ -1,0 +1,17 @@
+in_list([],_):-fail.
+in_list([El|_],El).
+in_list([_|T],El):-in_list(T,El).
+
+zad14:- Hairs=[_,_,_],
+	in_list(Hairs,[belokurov,_]),
+	in_list(Hairs,[rizhov,_]),
+	in_list(Hairs,[chernov,_]),
+	in_list(Hairs,[_,blond]),
+	in_list(Hairs,[_,redhead]),
+	in_list(Hairs,[_,brunette]),
+	not(in_list(Hairs,[belokurov,blond])),
+	not(in_list(Hairs,[rizhov,redhead])),
+	not(in_list(Hairs,[chernov,brunette])),
+	write(Hairs),!.
+
+
