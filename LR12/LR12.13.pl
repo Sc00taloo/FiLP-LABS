@@ -1,5 +1,5 @@
-fact(0,F,F):-!.
-fact(I,F,Fact):-Fact1 is Fact * I, I1 is I - 1, fact(I1,F,Fact1).
+fact(0,X,X):-!.
+fact(I,X,Fact):-Fact1 is Fact * I, I1 is I - 1, fact(I1,X,Fact1).
 fact(N,X):-fact(N,X,1).
 
 psfdin(0,X,X):-!.
